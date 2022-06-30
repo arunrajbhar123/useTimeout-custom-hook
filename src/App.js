@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import useTimeout from "./TimeOutHook/useTimeout.jsx";
+import { useState } from "react";
 
 function App() {
+  const [delay, setDelay] = useState("");
+  const { ready } = useTimeout(5000);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>useTimeout custom hook 5 second</h1>
+      <p>{ready ? "Ready" : "Not-Ready"}</p>
     </div>
   );
 }
