@@ -1,6 +1,4 @@
-import React from "react";
 import { useState, useEffect } from "react";
-
 const useTimeout = (delay) => {
   const [ready, setReday] = useState(false);
   useEffect(() => {

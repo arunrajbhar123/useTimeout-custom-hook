@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import useTimeout from "./TimeOutHook/useTimeout.jsx";
-import { useState } from "react";
+
 
 function App() {
   const { ready } = useTimeout(5000);
