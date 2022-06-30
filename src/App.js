@@ -4,8 +4,8 @@ import useTimeout from "./TimeOutHook/useTimeout.jsx";
 import { useState } from "react";
 
 function App() {
-  const [delay, setDelay] = useState("");
   const { ready } = useTimeout(5000);
+
   return (
     <div className="App">
       <h1>useTimeout custom hook 5 second</h1>
